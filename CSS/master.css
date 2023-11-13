@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #384651;
+}
+main {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    padding: 15px 0px;
+    background-color: #303c48;
+    width: 80%;
+    border-radius: 16px;
+}
+.content {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.add-task {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 15px;
+}
+.add-task #task {
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 1px hsl(210deg 16.22% 29.02%) solid;
+    caret-color: white;
+    color: white;
+}
+.add-task #task:focus {
+    outline: none;
+}
+.add-task button {
+    background-color: hsl(162.86deg 35.29% 46.67%);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tasks > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #394752;
+    color: white;
+    border-radius: 8px;
+    padding: 0px 15px;
+    font-size: 23px;
+}
+.tasks > div button{
+    height: fit-content;
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(185, 8, 8);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
